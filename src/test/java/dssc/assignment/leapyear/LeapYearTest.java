@@ -1,6 +1,8 @@
 package dssc.assignment.leapyear;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -36,5 +38,21 @@ public class LeapYearTest {
         LeapYear leapYear = new LeapYear();
         assertTrue(leapYear.isLeap(2000));
     }
+
+    @ParameterizedTest
+    @ValueSource(ints = {1988, 2004, 2008})
+    public void detectTypicalLeapYears(int year) {
+        LeapYear leapYear = new LeapYear();
+        assertTrue(leapYear.isLeap(year));
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {1991, 1995, 2003})
+    public void detectTypicalCommonYears(int year) {
+        LeapYear leapYear = new LeapYear();
+        assertFalse(leapYear.isLeap(year));
+    }
+
+
 
 }
