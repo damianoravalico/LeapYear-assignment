@@ -53,6 +53,4 @@ public class LeapYearTest {
         assertFalse(leapYear.isLeap(year));
     }
 
-
-
 }
