@@ -5,7 +5,7 @@ public class LeapYear {
     }
 
     public boolean isLeap(int year) {
-        return year == 1996;
+        return year % 4 == 0;
     }
 
 }
