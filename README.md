@@ -1,4 +1,4 @@
-# Leap Year assignment
+# Leap Year assignment for the Software Development Methods course
 
 Write a Java program that prints true or false depending on whether a given integer is a leap year or not.
 
