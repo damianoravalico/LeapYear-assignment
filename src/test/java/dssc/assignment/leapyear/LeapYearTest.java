@@ -31,4 +31,10 @@ public class LeapYearTest {
         assertFalse(leapYear.isLeap(1900));
     }
 
+    @Test
+    public void detect2000AsAtypicalLeapYear() {
+        LeapYear leapYear = new LeapYear();
+        assertTrue(leapYear.isLeap(2000));
+    }
+
 }
