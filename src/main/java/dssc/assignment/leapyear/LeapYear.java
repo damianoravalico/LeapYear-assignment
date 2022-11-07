@@ -4,7 +4,10 @@ public class LeapYear {
     public static void main(String[] args) {
     }
 
-    public boolean isLeap(int year) {
+    private LeapYear() {
+    }
+
+    public static boolean isLeap(int year) {
         if (year % 400 == 0) {
             return true;
         }
