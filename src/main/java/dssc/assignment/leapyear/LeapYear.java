@@ -1,9 +1,6 @@
 package dssc.assignment.leapyear;
 
 public class LeapYear {
-    public static void main(String[] args) { // Only tests are performed, main is not used
-    }
-
     private LeapYear() {
     }
 
